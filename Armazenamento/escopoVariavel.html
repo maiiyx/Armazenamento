@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+</head>
+<body>
+
+    <script>
+
+        let banda1 = 'Metallica'
+
+        function fun1(){
+            let banda2 = 'Seputura'
+
+            console.log(banda1)
+            console.log(banda2)
+
+            if(true){
+                console.log(banda1)
+                console.log(banda2)
+                let banda3 = 'Lomb of god'
+                console.log(banda3)
+            }
+
+            console.log(banda3)
+
+        }
+
+        fun1()
+        console.log(banda1)
+        console.log(banda2)
+        console.log(banda3)
+
+    </script>
+
+</body>
+</html>
